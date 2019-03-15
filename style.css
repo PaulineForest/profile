@@ -1,0 +1,75 @@
+
+body {
+font-family: 'Roboto', sans-serif;
+  background: rgb(245,245,245);
+  color: black;
+  font-size: 16px;
+  margin: 0;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+h1{
+  font-family: Courier;
+  color: #dd1144;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: Courier;
+  color: #dd1144;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+#banner{
+  text-align: center;
+  background-image: url("images/fast.png");
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+  color: white;
+}
+
+#banner p {
+	font-size:15px;
+	opacity: 0,7;
+	line-height: 4;
+}
+
+#banner h1 {
+  font-size: 50px;
+}
+
+.btn-blue {
+	border-radius: 4px;
+	background-color: #dd1144;
+	color: white;
+	padding: 10px 15px;
+}
+
+.card-white {
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11);
+  padding: 30px;
+  margin: 16px 0px;
+  height: 280px;
+}
+
+
+#footer {
+  padding: 30px;
+  background-color: black;
+  color: lightgrey;
+  text-align: center;
+  }
+
+  #footer a {
+  color: lightgrey;
+  font-size: 32px;
