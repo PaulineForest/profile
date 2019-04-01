@@ -7,69 +7,186 @@ font-family: 'Roboto', sans-serif;
   margin: 0;
 }
 
-a {
-  color: blue;
+.main-container {
+  display: flex;
+}
+
+/* banner */
+
+.banner {
+  background-image: url("images/banner.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 70px 0px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bolder;
+}
+.banner p {
+  font-size: 25px;
+  margin-bottom: 0;
+  opacity: 0.8;
+  font-weight: lighter;
+  text-align: center;
+  font-weight: lighter;
+  color: #2D2C2A
+}
+
+/* aside */
+
+.aside {
+  flex: 0 0 410px;
+  height: 135vh;
+  background: rgba(51, 51, 51, 1.00);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+
+}
+ 
+.photo img {
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+
+.contact h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  color : lightgrey;
+}
+
+.contact p {
+  font-size: 14px;
+  margin-bottom: 1px;
+}
+
+ #profil a {
+  color: white;
+  font-size: 32px;
+  margin-top: 10px;
   text-decoration: none;
+  margin-bottom: 10px;
 }
 
-h1{
-  font-family: Courier;
-  color: #dd1144;
-  font-weight: lighter;
-  font-size: 50px;
+#langues img {
+  margin-top: 25px;
+  margin-bottom: 15px;
 }
 
-h2 {
-  font-family: Courier;
-  color: #dd1144;
-  font-weight: lighter;
+.activites h3 {
+  margin-top: 12px;
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: lightgrey;
+}
+
+#informatiques {
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+#informatiques p {
+  margin-bottom: 1px;
+}
+
+.btn-medium {
+  border-radius: 4px;
+  background-color: #8A0808;
+  color: white;
+  padding: 8px 12px;
+  margin-top: 15px; 
+}
+
+.btn-medium:hover {
+  opacity: 1;
+  text-decoration: none;
+  color: black;
+}
+
+.voyages h3 {
+  margin-top: 25px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  color: lightgrey;
+}
+
+.voyages p {
+  margin-bottom: 1px;
+}
+
+
+/* page content */
+
+.page-content {
+  flex-grow: 1;
+  height: 180vh;
+  overflow-y: scroll;
+}
+
+.page-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 38% 100% 38%;
+  height: calc(140vh - 100px);
+  margin-top: 10px;
+}
+
+.dashboard-card {
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  padding: 15px;
+  margin: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Fonts and colors page-content */
+
+.page-content h2 {
+  color: #8A0808;
+  font-weight: bolder;
+  margin-bottom: 15px;
   font-size: 25px;
 }
 
-#banner{
-  text-align: center;
-  background-image: url("images/fast.png");
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  color: white;
+.page-content h3 {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  font-weight: bolder;
 }
 
-#banner p {
-	font-size:15px;
-	opacity: 0,7;
-	line-height: 4;
+.page-content h4 {
+  color: #585858;
+  font-size: 16px;
 }
 
-#banner h1 {
-  font-size: 50px;
+.page-content p {
+  color: black;
+  font-size: 16px;
+  margin-bottom: 4px;
 }
-
-.btn-blue {
-	border-radius: 4px;
-	background-color: #dd1144;
-	color: white;
-	padding: 10px 15px;
-}
-
-.card-white {
-  background-color: white;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11);
-  padding: 30px;
-  margin: 16px 0px;
-  height: 280px;
-}
-
 
 #footer {
-  padding: 30px;
-  background-color: black;
-  color: lightgrey;
+  padding: 10px;
+  background-color: #8A0808;
   text-align: center;
   }
 
   #footer a {
-  color: lightgrey;
-  font-size: 32px;
+  color: white;
+  font-size: 15px;
+
